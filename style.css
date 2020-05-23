@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+
+html { box-sizing: border-box; }
+
+*, *::before, *::after { box-sizing: inherit; }
+
+:root {
+   --blue-color: hsl(223, 87%, 63%);
+   --pale-blue: hsl(223, 100%, 88%);
+   --dark-blue: hsl(209, 33%, 12%);
+   --light-red: hsl(354, 100%, 66%);
+}
+
+body {
+   font-family: 'Libre Franklin', sans-serif;
+   font-size: 20px;
+   margin: 0;
+   text-rendering: optimizeLegibility;
+   color: var(--dark-blue);
+}
+
+.container {
+   padding: 2em 1.2em;
+   text-align: center;
+   max-width: 375px;
+   margin: 0 auto;
+}
+
+#logo {
+   padding: 2.5em;
+   max-height: 20%;
+   width: 50%;
+}
+
+h2 { 
+   margin-top: 0;
+   margin-bottom: 0.3em 
+}
+
+span { 
+   color: rgba(128, 128, 128, 0.767);
+   font-weight: 300;
+}
+
+.notify-msg { font-size: 17px; }
+
+#input-email, #input-btn {
+   padding: 1em 2em;
+   width: 90%;
+   border-radius: 2em;
+   border: 1px solid var(--pale-blue);
+}
+
+#input-email { 
+   margin-top: 2em; 
+   color: var(--dark-blue);
+}
+
+#input-email:active { outline: none; }
+
+#input-email::placeholder { color: var(--pale-blue); }
+
+#input-btn {
+   background-color: var(--blue-color);
+   color: white;
+   font-weight: 500;
+   margin-top: 0.7em;
+   box-shadow: 5px 5px 10px var(--pale-blue);
+}
+
+#input-btn:hover { 
+   background-color: hsl(223, 76%, 67%);
+   cursor: pointer;
+}
+
+#illustration { margin: 4em 0; }
+
+.icons {
+   width: 5%;
+   color: var(--blue-color);
+   border: 1px solid hsla(223, 87%, 63%, 0.2);
+   padding: 0.3em 0.4em;
+   border-radius: 1em;
+   margin-bottom: 1em;
+}
+
+.icons + .icons { margin-left: 10px; }
+
+.icons:hover { 
+   background-color: var(--blue-color);
+   color: #fff;
+   cursor: pointer;
+}
+
+#rights {
+   opacity: 0.4;
+   font-size: 10px;
+}
+
+@media (min-width: 750px) {
+
+   .container {
+      padding: 2em;
+      max-width: 750px;
+   }
+
+   #logo {
+      padding: 2.5em;
+      width: 25%;
+   }
+
+   #input-email, #input-btn {
+   border-radius: 2em;
+   border: 1px solid var(--pale-blue);
+   }
+
+   #input-btn { 
+      padding: 1em 0em;
+      margin-left: 0.5em;
+      width: 25%;
+   }
+
+   #input-email { 
+      padding: 1em 2em;
+      width: 50%;
+   }
+
+   .icons {
+      padding: 0.5em 0.2em;
+      border-radius: 50%;
+   }
+}
+
+@media (min-width: 1050px) {
+
+   #logo {
+      padding: 2.5em;
+      width: 25%;
+   }
+
+   h2 { font-size: 35px; }
+
+   #rights {
+      opacity: 0.4;
+      font-size: 15px;
+   }
+}
