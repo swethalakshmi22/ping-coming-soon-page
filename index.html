@@ -20,11 +20,11 @@
     <img src="images/logo.svg" alt="ping logo" id="logo">
     <h2><span>We are launching</span> soon!</h2>
     <small class="notify-msg">Subscribe and get notified</small><br/>
-    <form>
-    <input type="email" id="input-email" placeholder="Your email address.....">
-    <small class="error-msg"><em></em></small>
+    <div class="pos">
+    <input type="email" id="input-email" placeholder="Your email address....."><br/>
+    <small id="error-msg"><em>Please provide a valid email address</em></small>
+    </div>
     <button id="input-btn">Notify Me</button>
-    </form>
     <img src="images/illustration-dashboard.png" alt="illustration" width="100%" id="illustration">
     <ion-icon name="logo-facebook" class="icons"></ion-icon>
     <ion-icon name="logo-twitter" class="icons"></ion-icon>
@@ -32,6 +32,5 @@
     <small id="rights">&copy; Copyright Ping. All rights reserved.</small>
   </div>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-  <script src="app.js"></script>
 </body>
 </html>
